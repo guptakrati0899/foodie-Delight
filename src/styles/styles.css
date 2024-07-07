@@ -1,0 +1,156 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f8f9fa;
+  }
+  
+  .container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Header */
+  h1 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .add {
+    margin: 10px;
+  }
+  /* Form styles */
+  form {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  form > div {
+    margin-bottom: 15px;
+  }
+  
+  label {
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: calc(100% - 22px); /* to accommodate padding and border */
+    box-sizing: border-box;
+  }
+  
+  button {
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* List styles */
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    background: #fff;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  }
+  
+  li > div {
+    flex: 1;
+  }
+  
+  li h2 {
+    margin: 0;
+    font-size: 18px;
+  }
+  
+  li p {
+    margin: 5px 0;
+    color: #666;
+  }
+  
+  li .buttons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  li button {
+    background-color: #28a745;
+  }
+  
+  li button.delete {
+    background-color: #dc3545;
+  }
+  
+  li .buttons button:hover {
+    background-color: #218838;
+  }
+  
+  li .buttons button.delete:hover {
+    background-color: #c82333;
+  }
+  
+  /* Links */
+  a {
+    text-decoration: none;
+    color: #007bff;
+    margin-right: 10px;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    .container {
+      width: 95%;
+      padding: 10px;
+    }
+  
+    form {
+      width: 100%;
+    }
+  
+    li {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    li .buttons {
+      width: 100%;
+      justify-content: flex-start;
+    }
+  }
+  
